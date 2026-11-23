@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet 15 nocturnal animals of the Sonoran Desert.">  
+    <title>Nocturnal Natives | Desert After Dark</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nocturnal-natives.css">
+  
+    <script defer src="js/nocturnal-natives.js"></script>
+  </head>
+
+  <body class="natives-page">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-layout">
+      <a class="site-name" href="index.html">Desert After Dark</a>
+      <nav aria-label="Main navigation">
+        <div id="menuToggle">
+          <input type="checkbox" id="menuCheckbox"
+            aria-label="Toggle navigation menu" aria-controls="menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <ul class="nav-list" id="menu">
+            <li><a class="nav-link" href="nocturnal-natives.html" aria-current="page">Nocturnal Natives</a></li>
+            <li><a class="nav-link" href="adaptations.html">Adaptations</a></li>
+            <li><a class="nav-link" href="#">Challenges</a></li>
+            <li><a class="nav-link" href="#">Exploring the Night</a></li>
+            <li><a class="nav-link" href="#">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section" aria-labelledby="profiles-title">
+      <header class="section-heading">
+        <h1 id="profiles-title">Nocturnal Natives</h1>
+        <p class="section-lead">Explore the animals that survive and thrive in the Sonoran Desert after dark.</p>
+        <p>Select any animal card to learn more.</p>
+      </header>
+
+      <div class="animal-grid">
+
+        <!-- Arizona Bark Scorpion -->
+        <article class="animal-card profile-card" id="bark-scorpion">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/arizona-bark-scorpion-320.webp 320w, images/arizona-bark-scorpion-640.webp 640w, images/arizona-bark-scorpion-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/arizona-bark-scorpion-640.jpg"
+                    srcset="images/arizona-bark-scorpion-320.jpg 320w, images/arizona-bark-scorpion-640.jpg 640w, images/arizona-bark-scorpion-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="2048" height="1266"
+                    alt="Arizona bark scorpion on a paved surface."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Arachnid</span>
+                <h2>Arizona Bark Scorpion</h2>
+                <p>This pale scorpion usually stays hidden during the day and emerges at night to hunt small animals such as insects.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Arizona Bark Scorpion">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Arizona Bark Scorpion</h2>
+              <h3>Habitat</h3>
+              <p>Found in low-desert habitats, including areas with loose bark, rocky crevices, and other sheltered places.</p>
+              <h3>Fun Fact</h3>
+              <p>Arizona bark scorpions glow blue-green under ultraviolet light.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Arizona Bark Scorpion card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Elf Owl -->
+        <article class="animal-card profile-card" id="elf-owl">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/elf-owl-320.webp 320w, images/elf-owl-640.webp 640w, images/elf-owl-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/elf-owl-640.jpg"
+                    srcset="images/elf-owl-320.jpg 320w, images/elf-owl-640.jpg 640w, images/elf-owl-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    	width="2048" height="1327"
+                    alt="Elf owl perched on a tree trunk."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Bird</span>
+                <h2>Elf Owl</h2>
+                <p>One of the smallest owls, the elf owl hunts insects and other small prey after sunset.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Elf Owl">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Elf Owl</h2>
+              <h3>Habitat</h3>
+              <p>Often found in desert woodlands and saguaro areas. It nests in cavities left by woodpeckers in trees and cacti.</p>
+              <h3>Fun Fact</h3>
+              <p>An adult elf owl weighs roughly as much as a golf ball.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Elf Owl card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ringtail -->
+        <article class="animal-card profile-card" id="ringtail">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/ringtail-320.webp 320w, images/ringtail-640.webp 640w, images/ringtail-750.webp 750w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/ringtail-640.jpg"
+                    srcset="images/ringtail-320.jpg 320w, images/ringtail-640.jpg 640w, images/ringtail-750.jpg 750w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="750" height="500"
+                    alt="Ringtail standing on rocks at night."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Mammal</span>
+                <h2>Ringtail</h2>
+                <p>This small relative of the raccoon is mostly active at night and uses its climbing skills to move through rugged terrain.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Ringtail">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Ringtail</h2>
+              <h3>Habitat</h3>
+              <p>Lives around rocky canyons, cliffs, and desert hillsides, using cracks and sheltered spaces for daytime rest.</p>
+              <h3>Fun Fact</h3>
+              <p>The ringtail is Arizona’s official state mammal.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Ringtail card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Kit Fox -->
+        <article class="animal-card profile-card" id="kit-fox">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/kit-fox-320.webp 320w, images/kit-fox-640.webp 640w, images/kit-fox-942.webp 942w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/kit-fox-640.jpg"
+                    srcset="images/kit-fox-320.jpg 320w, images/kit-fox-640.jpg 640w, images/kit-fox-942.jpg 942w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="942" height="748"
+                    alt="Three kit foxes peering out of a drainage culvert."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Mammal</span>
+                <h2>Kit Fox</h2>
+                <p>A small desert fox that searches for rodents and other prey after dark.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Kit Fox">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Kit Fox</h2>
+              <h3>Habitat</h3>
+              <p>Open desert flats and scrubland, where it shelters in underground dens.</p>
+              <h3>Fun Fact</h3>
+              <p>Kit foxes often use more than one underground den.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Kit Fox card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Merriam's Kangaroo Rat -->
+        <article class="animal-card profile-card" id="merriams-kangaroo-rat">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/merriams-kangaroo-rat-320.webp 320w, images/merriams-kangaroo-rat-640.webp 640w, images/merriams-kangaroo-rat-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/merriams-kangaroo-rat-640.jpg"
+                    srcset="images/merriams-kangaroo-rat-320.jpg 320w, images/merriams-kangaroo-rat-640.jpg 640w, images/merriams-kangaroo-rat-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="1500" height="769"
+                    alt="Merriam’s kangaroo rat on sandy ground at night."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Mammal</span>
+                <h2>Merriam’s Kangaroo Rat</h2>
+                <p>A nocturnal rodent that gathers seeds and carries them back to its burrow.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Merriam’s Kangaroo Rat">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Merriam’s Kangaroo Rat</h2>
+              <h3>Habitat</h3>
+              <p>Sandy or gravelly desert flats and shrublands with soil suitable for burrows.</p>
+              <h3>Fun Fact</h3>
+              <p>Despite its name, this animal is a rodent—not a kangaroo.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Merriam’s Kangaroo Rat card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Lesser Long-nosed Bat -->
+        <article class="animal-card profile-card" id="lesser-long-nosed-bat">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/lesser-long-nosed-bat-320.webp 320w, images/lesser-long-nosed-bat-640.webp 640w, images/lesser-long-nosed-bat-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/lesser-long-nosed-bat-640.jpg"
+                    srcset="images/lesser-long-nosed-bat-320.jpg 320w, images/lesser-long-nosed-bat-640.jpg 640w, images/lesser-long-nosed-bat-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="2048" height="1536"
+                    alt="Lesser long-nosed bat spreading its wings against a rocky surface."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Mammal</span>
+                <h2>Lesser Long-nosed Bat</h2>
+                <p>A night-flying bat that visits cactus and agave flowers to feed on nectar and pollen.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Lesser Long-nosed Bat">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Lesser Long-nosed Bat</h2>
+              <h3>Habitat</h3>
+              <p>Desert and foothill areas with flowering cacti and agaves; it roosts in sheltered caves or mines.</p>
+              <h3>Fun Fact</h3>
+              <p>Its visits to night-blooming flowers help pollinate saguaro cacti.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Lesser Long-nosed Bat card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pallid Bat -->
+        <article class="animal-card profile-card" id="pallid-bat">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/pallid-bat-320.webp 320w, images/pallid-bat-640.webp 640w, images/pallid-bat-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/pallid-bat-640.jpg"
+                    srcset="images/pallid-bat-320.jpg 320w, images/pallid-bat-640.jpg 640w, images/pallid-bat-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="2048" height="2048"
+                    alt="Pallid bat with large ears photographed during a wildlife survey."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Mammal</span>
+                <h2>Pallid Bat</h2>
+                <p>An insect-eating bat that often searches for prey on the ground.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Pallid Bat">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Pallid Bat</h2>
+              <h3>Habitat</h3>
+              <p>Dry canyons, desert scrub, and rocky areas, with roosts in crevices, caves, or buildings.</p>
+              <h3>Fun Fact</h3>
+              <p>Pallid bats sometimes eat scorpions as well as insects.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Pallid Bat card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Common Poorwill -->
+        <article class="animal-card profile-card" id="common-poorwill">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/common-poorwill-320.webp 320w, images/common-poorwill-640.webp 640w, images/common-poorwill-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/common-poorwill-640.jpg"
+                    srcset="images/common-poorwill-320.jpg 320w, images/common-poorwill-640.jpg 640w, images/common-poorwill-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="2048" height="1366"
+                    alt="Common poorwill resting on rocky ground, its feathers blending with the surroundings."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Bird</span>
+                <h2>Common Poorwill</h2>
+                <p>A small nightjar that catches insects after dusk and is often heard calling at night.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Common Poorwill">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Common Poorwill</h2>
+              <h3>Habitat</h3>
+              <p>Open desert scrub, dry woodlands, and rocky ground where it can rest during the day.</p>
+              <h3>Fun Fact</h3>
+              <p>Its repeated call sounds like “poor-will,” giving the bird its name.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Common Poorwill card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Western Banded Gecko -->
+        <article class="animal-card profile-card" id="western-banded-gecko">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/western-banded-gecko-320.webp 320w, images/western-banded-gecko-640.webp 640w, images/western-banded-gecko-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/western-banded-gecko-640.jpg"
+                    srcset="images/western-banded-gecko-320.jpg 320w, images/western-banded-gecko-640.jpg 640w, images/western-banded-gecko-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="2048" height="1362"
+                    alt="Western banded gecko standing on coarse sand."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Reptile</span>
+                <h2>Western Banded Gecko</h2>
+                <p>A small, night-active lizard that searches for insects across the desert floor.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Western Banded Gecko">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Western Banded Gecko</h2>
+              <h3>Habitat</h3>
+              <p>Desert scrub, rocky washes, and sandy ground with stones or debris for daytime cover.</p>
+              <h3>Fun Fact</h3>
+              <p>This gecko can produce soft squeaking sounds.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Western Banded Gecko card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Desert Nightsnake -->
+        <article class="animal-card profile-card" id="desert-nightsnake">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/desert-nightsnake-320.webp 320w, images/desert-nightsnake-640.webp 640w, images/desert-nightsnake-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/desert-nightsnake-640.jpg"
+                    srcset="images/desert-nightsnake-320.jpg 320w, images/desert-nightsnake-640.jpg 640w, images/desert-nightsnake-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="2048" height="1214"
+                    alt="Desert nightsnake on rocky desert ground."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Reptile</span>
+                <h2>Desert Nightsnake</h2>
+                <p>A secretive snake that hunts lizards and other small animals after dark.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Desert Nightsnake">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Desert Nightsnake</h2>
+              <h3>Habitat</h3>
+              <p>Dry scrubland, rocky hillsides, and washes, often sheltering beneath rocks or in cracks.</p>
+              <h3>Fun Fact</h3>
+              <p>This secretive snake is often more likely to be spotted after sunset than during the day.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Desert Nightsnake card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Couch's Spadefoot -->
+        <article class="animal-card profile-card" id="couchs-spadefoot">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/couchs-spadefoot-320.webp 320w, images/couchs-spadefoot-640.webp 640w, images/couchs-spadefoot-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/couchs-spadefoot-640.jpg"
+                    srcset="images/couchs-spadefoot-320.jpg 320w, images/couchs-spadefoot-640.jpg 640w, images/couchs-spadefoot-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="2048" height="1536"
+                    alt="Couch’s spadefoot toad on desert soil."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Amphibian</span>
+                <h2>Couch’s Spadefoot</h2>
+                <p>A desert amphibian that can emerge after summer rain to feed and breed.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Couch’s Spadefoot">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Couch’s Spadefoot</h2>
+              <h3>Habitat</h3>
+              <p>Arid flats and grasslands with loose soil, near temporary pools that form after rain.</p>
+              <h3>Fun Fact</h3>
+              <p>After summer storms, its young can develop remarkably quickly in temporary pools.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Couch’s Spadefoot card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sonoran Desert Toad -->
+        <article class="animal-card profile-card" id="sonoran-desert-toad">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/sonoran-desert-toad-320.webp 320w, images/sonoran-desert-toad-640.webp 640w, images/sonoran-desert-toad-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/sonoran-desert-toad-640.jpg"
+                    srcset="images/sonoran-desert-toad-320.jpg 320w, images/sonoran-desert-toad-640.jpg 640w, images/sonoran-desert-toad-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="2048" height="1152"
+                    alt="Close-up of a Sonoran Desert toad."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Amphibian</span>
+                <h2>Sonoran Desert Toad</h2>
+                <p>A large toad that becomes especially active on warm, rainy nights.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Sonoran Desert Toad">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Sonoran Desert Toad</h2>
+              <h3>Habitat</h3>
+              <p>Desert washes, lowlands, and areas near temporary pools or other seasonal water.</p>
+              <h3>Fun Fact</h3>
+              <p>This is one of the largest native toads in the southwestern United States.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Sonoran Desert Toad card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Arizona Blonde Tarantula -->
+        <article class="animal-card profile-card" id="arizona-blonde-tarantula">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/arizona-blonde-tarantula-320.webp 320w, images/arizona-blonde-tarantula-640.webp 640w, images/arizona-blonde-tarantula-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/arizona-blonde-tarantula-640.jpg"
+                    srcset="images/arizona-blonde-tarantula-320.jpg 320w, images/arizona-blonde-tarantula-640.jpg 640w, images/arizona-blonde-tarantula-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="2047" height="1282"
+                    alt="Arizona blonde tarantula standing on a rock."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Arachnid</span>
+                <h2>Arizona Blonde Tarantula</h2>
+                <p>A large ground-dwelling spider that feeds on insects and other small prey.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Arizona Blonde Tarantula">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Arizona Blonde Tarantula</h2>
+              <h3>Habitat</h3>
+              <p>Desert scrub and grassland, where it spends much of its time in a burrow.</p>
+              <h3>Fun Fact</h3>
+              <p>Female Arizona blonde tarantulas can live much longer than males.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Arizona Blonde Tarantula card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Palo Verde Root Borer Beetle -->
+        <article class="animal-card profile-card" id="palo-verde-root-borer-beetle">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/palo-verde-root-borer-beetle-320.webp 320w, images/palo-verde-root-borer-beetle-640.webp 640w, images/palo-verde-root-borer-beetle-960.webp 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/palo-verde-root-borer-beetle-640.jpg"
+                    srcset="images/palo-verde-root-borer-beetle-320.jpg 320w, images/palo-verde-root-borer-beetle-640.jpg 640w, images/palo-verde-root-borer-beetle-960.jpg 960w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="2048" height="1464"
+                    alt="Palo verde root borer beetle resting on a stone surface."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Insect</span>
+                <h2>Palo Verde Root Borer Beetle</h2>
+                <p>A large longhorn beetle whose adults are often seen on warm summer evenings.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Palo Verde Root Borer Beetle">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Palo Verde Root Borer Beetle</h2>
+              <h3>Habitat</h3>
+              <p>Desert areas with palo verde and other woody plants; its young develop underground near roots.</p>
+              <h3>Fun Fact</h3>
+              <p>The larvae can spend several years underground before becoming adult beetles.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Palo Verde Root Borer Beetle card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Yucca Moth -->
+        <article class="animal-card profile-card" id="yucca-moth">
+          <div class="profile-card__inner">
+            <div class="profile-card__face profile-card__front">
+              <div class="animal-card__media">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/yucca-moth-320.webp 320w, images/yucca-moth-448.webp 448w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw">
+                  <img class="animal-card__image"
+                    src="images/yucca-moth-441.jpg"
+                    srcset="images/yucca-moth-320.jpg 320w, images/yucca-moth-448.jpg 448w"
+                    sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 30vw, 36vw"
+                    width="448" height="441"
+                    alt="Yucca moth placing pollen onto a yucca flower."
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="animal-card__body">
+                <span class="category-tag">Insect</span>
+                <h2>Yucca Moth (Tegeticula sp.)</h2>
+                <p>A small moth associated with yucca flowers; the adults are commonly active after dark.</p>
+                <button class="profile-card__action profile-card__show" type="button"
+                  aria-label="More information about Yucca Moth">
+                  More Info <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <div class="profile-card__face profile-card__back" aria-hidden="true" inert>
+              <h2>Yucca Moth (Tegeticula sp.)</h2>
+              <h3>Habitat</h3>
+              <p>Dry scrubland and grassland where its host yucca plants grow.</p>
+              <h3>Fun Fact</h3>
+              <p>Female yucca moths deliberately carry pollen between yucca flowers.</p>
+              <button class="profile-card__action profile-card__hide" type="button"
+                aria-label="Return to Yucca Moth card">
+                Back <span aria-hidden="true">↶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="u-mb-0">Desert After Dark — GIT 414 capstone</p>
+      <details class="photo-credits">
+        <summary>Photo credits and licenses</summary>
+        <ul>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Squaw-ringtail-28112.jpg">Ringtail</a> photo by Robertbody — <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Elf_Owl_(Micrathene_whitneyi)_(17210856942).jpg">Elf owl</a> photo by Dominic Sherony — <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Centruroides_sculpturatus_192296286.jpg">Arizona bark scorpion</a> photo by Andrew Meeds — <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Kit_foxes_at_the_Nevada_Test_Site.jpg">Kit Fox</a> photo by NNSA / Nevada Site Office — Public domain (U.S. federal government work).</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Merriam%27s_kangaroo_rat_(Dipodomys_merriami,_F_Heteromyidae)_(11040398344).jpg">Merriam’s Kangaroo Rat</a> photo by Marshal Hedin — <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Leptonycteris_yerbabuenae_13248615.jpg">Lesser Long-nosed Bat</a> photo by Daniel Pineda Vera — <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Pallid_Bat_(Antrozous_pallidus).jpg">Pallid Bat</a> photo by Connor Long — <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Phalaenoptilus_nuttallii_115092271.jpg">Common Poorwill</a> photo by Jan Ebr — <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
+          <li><a href="https://www.flickr.com/photos/joshuatreenp/15072096090/">Western Banded Gecko</a> photo by Joshua Tree National Park — Public domain.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Hypsiglena_chlorophaea.jpg">Desert Nightsnake</a> photo by nmoorhatch — <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Scaphiopus_couchii_47209378.jpg">Couch’s Spadefoot</a> photo by Alex Abair — <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Incilius_alvarius_Stanton_1.JPG">Sonoran Desert Toad</a> photo by Rstanton13 — <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Arizona_Blond_Tarantula_-_Flickr_-_GregTheBusker.jpg">Arizona Blonde Tarantula</a> photo by Greg Schechter — <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Derobrachus_hovorei.jpg">Palo Verde Root Borer Beetle</a> photo by Mike Ostrowski — <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Tegeticula.jpg">Yucca Moth (Tegeticula sp.)</a> photo by Sherwin Carlquist — <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+        </ul>
+      </details>
+    </div>
+  </footer>
+</body>
+</html>
