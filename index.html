@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A capstone preview about nocturnal wildlife in the Sonoran Desert.">
+  <title>Desert After Dark | Sonoran Wildlife at Night</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-layout">
+      <a class="site-name" href="index.html" aria-current="page">Desert After Dark</a>
+      <nav aria-label="Main navigation">
+        <div id="menuToggle">
+          <input type="checkbox" id="menuCheckbox" aria-label="Toggle navigation menu" aria-controls="menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <ul class="nav-list" id="menu">
+            <li><a class="nav-link" href="nocturnal-natives.html">Nocturnal Natives</a></li>
+            <li><a class="nav-link" href="adaptations.html">Adaptations</a></li>
+            <li><a class="nav-link" href="#">Challenges</a></li>
+            <li><a class="nav-link" href="#">Exploring the Night</a></li>
+            <li><a class="nav-link" href="#">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Sonoran Wildlife at Night</h1>
+      <p class="hero-description u-max-text">Discover the remarkable creatures that come alive in the Sonoran Desert after dark.</p>
+      <a class="button" href="#animals">Explore Animals</a>
+    </section>
+
+    <section id="animals" class="section" aria-labelledby="animals-title">
+      <div class="section-heading">
+        <h2 id="animals-title">Featured Animals</h2>
+        <p class="section-lead">Meet three of the Sonoran Desert’s night-active neighbors.</p>
+      </div>
+
+      <div class="animal-grid">
+        <article class="animal-card">
+          <div class="animal-card__media">
+            <picture>
+              <source type="image/webp"
+                srcset="images/arizona-bark-scorpion-320.webp 320w, images/arizona-bark-scorpion-640.webp 640w, images/arizona-bark-scorpion-960.webp 960w"
+                sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 46vw, calc(100vw - 2rem)">
+              <img class="animal-card__image"
+                src="images/arizona-bark-scorpion-640.jpg"
+                srcset="images/arizona-bark-scorpion-320.jpg 320w, images/arizona-bark-scorpion-640.jpg 640w, images/arizona-bark-scorpion-960.jpg 960w"
+                sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 46vw, calc(100vw - 2rem)"
+                width="2048" height="1266" alt="Arizona bark scorpion on a paved surface." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="animal-card__body">
+            <span class="category-tag">Arachnid</span>
+            <h3>Arizona Bark Scorpion</h3>
+            <p>A pale scorpion that shelters during the day and is active at night.</p>
+            <a class="animal-card__link" href="nocturnal-natives.html#bark-scorpion" aria-label="More about Arizona Bark Scorpion"> More <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="animal-card">
+          <div class="animal-card__media">
+            <picture>
+              <source type="image/webp"
+                srcset="images/elf-owl-320.webp 320w, images/elf-owl-640.webp 640w, images/elf-owl-960.webp 960w"
+                sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 46vw, calc(100vw - 2rem)">
+              <img class="animal-card__image"
+                src="images/elf-owl-640.jpg"
+                srcset="images/elf-owl-320.jpg 320w, images/elf-owl-640.jpg 640w, images/elf-owl-960.jpg 960w"
+                sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 46vw, calc(100vw - 2rem)"
+                width="2048" height="1327" alt="Elf owl perched on a tree trunk." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="animal-card__body">
+            <span class="category-tag">Bird</span>
+            <h3>Elf Owl</h3>
+            <p>A small desert owl with bright eyes that becomes active after sunset.</p>
+            <a class="animal-card__link" href="nocturnal-natives.html#elf-owl" aria-label="More about Elf Owl"> More <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="animal-card">
+          <div class="animal-card__media">
+            <picture>
+              <source type="image/webp"
+                srcset="images/ringtail-320.webp 320w, images/ringtail-640.webp 640w, images/ringtail-750.webp 750w"
+                sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 46vw, calc(100vw - 2rem)">
+              <img class="animal-card__image"
+                src="images/ringtail-640.jpg"
+                srcset="images/ringtail-320.jpg 320w, images/ringtail-640.jpg 640w, images/ringtail-750.jpg 750w"
+                sizes="(min-width: 64rem) 22rem, (min-width: 44rem) 46vw, calc(100vw - 2rem)"
+                width="750" height="500" alt="Ringtail standing on rocks at night." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="animal-card__body">
+            <span class="category-tag">Mammal</span>
+            <h3>Ringtail</h3>
+            <p>A nocturnal mammal recognized by its long, ringed tail and excellent climbing ability.</p>
+            <a class="animal-card__link" href="nocturnal-natives.html#ringtail" aria-label="More about Ringtail"> More <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside id="fact" class="fun-fact" aria-labelledby="fact-title">
+      <div class="fun-fact__layout">
+        <h2 id="fact-title">Fun Fact</h2>
+        <p class="u-mb-0">This callout will highlight a researched wildlife fact in the finished website.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="u-mb-0">Desert After Dark — GIT 414 capstone preview</p>
+      <details class="photo-credits">
+        <summary>Photo credits and licenses</summary>
+        <ul>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Squaw-ringtail-28112.jpg">Ringtail</a> photo by Robertbody — <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Elf_Owl_(Micrathene_whitneyi)_(17210856942).jpg">Elf owl</a> photo by dominic sherony — <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Centruroides_sculpturatus_192296286.jpg">Arizona bark scorpion</a> photo by Andrew Meeds — <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
+          <li>Hero background: AI-generated artwork selected for this project; compressed for the site.</li>
+        </ul>
+        <p class="u-mb-0">Animal photographs were resized and compressed for responsive display.</p>
+      </details>
+    </div>
+  </footer>
+</body>
+</html>
