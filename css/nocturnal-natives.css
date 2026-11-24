@@ -4,6 +4,18 @@
     margin-block-start: var(--space-large);
   }
 
+  .natives-page .nav-link[aria-current="page"] {
+    color: var(--color-prickly-pear);
+    border-bottom: 2px solid var(--color-prickly-pear);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .natives-page .nav-link[aria-current="page"]:hover {
+    color: var(--color-prickly-pear);
+    text-decoration: none;
+  }
+
   .natives-page .animal-grid {
     grid-template-columns: minmax(0, 1fr);
   }
