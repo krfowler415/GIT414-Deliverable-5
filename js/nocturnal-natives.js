@@ -32,3 +32,29 @@ profileCards.forEach((card) => {
     moreButton.focus({ preventScroll: true });
   });
 });
+
+// Home featured-animal links use fragments such as #elf-owl.
+// When a direct link arrives, open the matching card and bring it into view.
+function openLinkedAnimal() {
+  const id = decodeURIComponent(window.location.hash.slice(1));
+  if (!id) return;
+
+  const card = [...profileCards].find((item) => item.id === id);
+  if (!card) return;
+
+  profileCards.forEach((otherCard) => {
+    flipCard(otherCard, otherCard === card);
+  });
+
+  const backButton = card.querySelector('.profile-card__hide');
+  backButton.focus({ preventScroll: true });
+  card.scrollIntoView({ behavior: 'auto', block: 'center' });
+}
+
+// After images/styles load, ensure fragment scrolling lands on the opened card.
+if (document.readyState === 'complete') {
+  openLinkedAnimal();
+} else {
+  window.addEventListener('load', openLinkedAnimal, { once: true });
+}
+window.addEventListener('hashchange', openLinkedAnimal);
