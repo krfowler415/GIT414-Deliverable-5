@@ -1,0 +1,128 @@
+/* Adaptations - same design tokens and breakpoints as Home. */
+@layer overrides {
+  .adaptations-page .section-heading {
+    margin-block-start: var(--space-large);
+  }
+
+  .adaptations-page .section-lead {
+    max-inline-size: 65ch;
+    margin-inline: auto;
+  }
+
+  .adaptations-page .nav-link[aria-current="page"] {
+    color: var(--color-prickly-pear);
+    border-bottom: 2px solid var(--color-prickly-pear);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .adaptations-page .nav-link[aria-current="page"]:hover {
+    color: var(--color-prickly-pear);
+    text-decoration: none;
+  }
+
+  /* Mobile: one column. Tablet and desktop: two columns. */
+  .adaptations-page .adaptation-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-medium);
+  }
+
+  @media (min-width: 44rem) {
+    .adaptations-page .adaptation-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  /* Fixed-size cards: opening a card does not resize the grid. */
+  .adaptations-page .adaptation-card {
+    position: relative;
+    isolation: isolate;
+    inline-size: 100%;
+    min-inline-size: 0;
+    min-block-size: 13rem;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border: 1px solid var(--color-rock-umber);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    color: var(--color-text);
+    transition: border-color 250ms ease;
+  }
+
+  /* Pink border on hover only, or while the card is selected. */
+  @media (hover: hover) {
+    .adaptations-page .adaptation-card:hover {
+      border-color: var(--color-prickly-pear);
+    }
+  }
+
+  .adaptations-page .adaptation-card.is-open {
+    border-color: var(--color-prickly-pear);
+  }
+
+  .adaptations-page .adaptation-card:has(.adaptation-card__toggle:focus-visible) {
+    border-color: var(--color-prickly-pear);
+    outline: 3px solid var(--color-prickly-pear);
+    outline-offset: 3px;
+  }
+
+  /* Responsive images fill the card; CSS controls cropping. */
+  .adaptations-page .adaptation-card__media,
+  .adaptations-page .adaptation-card__media picture,
+  .adaptations-page .adaptation-card__image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  .adaptations-page .adaptation-card__media {
+    z-index: 0;
+  }
+
+  .adaptations-page .adaptation-card__image {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 650ms cubic-bezier(.25, 1, .25, 1);
+  }
+
+  @media (hover: hover) {
+    .adaptations-page .adaptation-card:hover .adaptation-card__image {
+      transform: scale(1.04);
+    }
+  }
+
+  .adaptations-page .adaptation-card.is-open .adaptation-card__image,
+  .adaptations-page .adaptation-card:has(.adaptation-card__toggle:focus-visible) .adaptation-card__image {
+    transform: scale(1.04);
+  }
+
+  /* A dark gradient to keep the overview readable. */
+  .adaptations-page .adaptation-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to top,
+      rgb(17 19 26 / .98),
+      rgb(17 19 26 / .82) 36%,
+      rgb(17 19 26 / .12) 100%
+    );
+    pointer-events: none;
+  }
+
+  /* An additional overlay fades in during hover and selection. */
+  .adaptations-page .adaptation-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgb(17 19 26 / .65);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 350ms ease;
+  }
+}
