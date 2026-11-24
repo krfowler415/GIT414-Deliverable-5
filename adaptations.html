@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore adaptations that help nocturnal wildlife survive in the Sonoran Desert.">
+    <title>Adaptations | Desert After Dark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/adaptations.css">
+    <script defer src="js/adaptations.js"></script>
+  </head>
+  <body class="adaptations-page">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-layout">
+      <a class="site-name" href="index.html">Desert After Dark</a>
+      <nav aria-label="Main navigation">
+        <div id="menuToggle">
+          <input type="checkbox" id="menuCheckbox" aria-label="Toggle navigation menu" aria-controls="menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <ul class="nav-list" id="menu">
+            <li><a class="nav-link" href="nocturnal-natives.html">Nocturnal Natives</a></li>
+            <li><a class="nav-link" href="adaptations.html" aria-current="page">Adaptations</a></li>
+            <li><a class="nav-link" href="#">Challenges</a></li>
+            <li><a class="nav-link" href="#">Exploring the Night</a></li>
+            <li><a class="nav-link" href="#">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section" aria-labelledby="adaptations-title">
+      <header class="section-heading">
+        <h1 id="adaptations-title">Adaptations</h1>
+        <p class="section-lead">Survival in the Sonoran Desert takes more than staying out of the sun.<p>
+        <p>Explore the traits, behaviors, and habitats that help nocturnal animals live after dark.</p>
+      </header>
+
+      <div class="adaptation-grid">
+
+        <!-- Shelter Among Saguaros -->
+        <article class="adaptation-card" data-title="Shelter Among Saguaros" id="saguaro-shelter">
+          <div class="adaptation-card__media">
+            <picture>
+              <source type="image/webp"
+                srcset="images/saguaro-shelter-320.webp 320w, images/saguaro-shelter-640.webp 640w, images/saguaro-shelter-900.webp 900w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)">
+              <img class="adaptation-card__image"
+                src="images/saguaro-shelter-640.jpg"
+                srcset="images/saguaro-shelter-320.jpg 320w, images/saguaro-shelter-640.jpg 640w, images/saguaro-shelter-900.jpg 900w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)"
+                width="900" height="600"
+                alt="Silhouetted saguaro cacti at sunset in the Sonoran Desert." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="adaptation-card__overview">
+            <span class="category-tag">Habitat</span>
+            <h2>Shelter Among Saguaros</h2>
+            <p>Desert plants create shelter high above the ground.</p>
+            <p class="adaptation-card__teaser" aria-hidden="true">A cactus cavity can become a safe place to nest.</p>
+          </div>
+          <button class="adaptation-card__toggle" type="button"
+            aria-label="Show details for Shelter Among Saguaros" aria-controls="saguaro-shelter-details"
+            aria-expanded="false"></button>
+          <div class="adaptation-card__details" id="saguaro-shelter-details" role="region"
+            aria-label="Shelter Among Saguaros details" aria-hidden="true" tabindex="-1" inert>
+            <span class="category-tag">Habitat</span>
+            <h2>Shelter Among Saguaros</h2>
+            <p>A saguaro is more than a landmark. Woodpeckers sometimes excavate cavities in its trunk, and other birds, including elf owls, can later use those openings as nest sites. The cactus provides a sheltered space in an otherwise exposed landscape.</p>
+            <p>Palo verde trees and other desert plants also offer cover and places to rest. For small nocturnal animals, choosing the right shelter can mean avoiding daytime heat and staying less visible to predators.</p>
+          </div>
+          <span class="adaptation-card__indicator" aria-hidden="true">+</span>
+        </article>
+
+        <!-- Underground Escape -->
+        <article class="adaptation-card" data-title="Underground Escape" id="underground-escape">
+          <div class="adaptation-card__media">
+            <picture>
+              <source type="image/webp"
+                srcset="images/underground-escape-320.webp 320w, images/underground-escape-640.webp 640w, images/underground-escape-960.webp 960w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)">
+              <img class="adaptation-card__image"
+                src="images/underground-escape-640.jpg"
+                srcset="images/underground-escape-320.jpg 320w, images/underground-escape-640.jpg 640w, images/underground-escape-960.jpg 960w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)"
+                width="960" height="720"
+                alt="Eroded dirt bank filled with small burrow openings." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="adaptation-card__overview">
+            <span class="category-tag">Behavior</span>
+            <h2>Underground Escape</h2>
+            <p>A burrow provides refuge from the daytime heat.</p>
+            <p class="adaptation-card__teaser" aria-hidden="true">What happens below the sand can make survival possible.</p>
+          </div>
+          <button class="adaptation-card__toggle" type="button"
+            aria-label="Show details for Underground Escape" aria-controls="underground-escape-details"
+            aria-expanded="false"></button>
+          <div class="adaptation-card__details" id="underground-escape-details" role="region"
+            aria-label="Underground Escape details" aria-hidden="true" tabindex="-1" inert>
+            <span class="category-tag">Behavior</span>
+            <h2>Underground Escape</h2>
+            <p>Much of the Sonoran Desert receives intense sunlight and experiences large temperature changes. Underground spaces provide more stable conditions than exposed ground, giving animals places to rest during the hottest hours.</p>
+            <p>Kit foxes use dens for shelter, while Merriam's kangaroo rats live in burrow systems and collect seeds during their nighttime activity. Burrowing helps animals avoid heat and predators, but different species make and use these underground spaces in different ways.</p>
+          </div>
+          <span class="adaptation-card__indicator" aria-hidden="true">+</span>
+        </article>
+
+        <!-- Rocky Refuges -->
+        <article class="adaptation-card" data-title="Rocky Refuges" id="rocky-refuges">
+          <div class="adaptation-card__media">
+            <picture>
+              <source type="image/webp"
+                srcset="images/rocky-refuges-320.webp 320w, images/rocky-refuges-640.webp 640w, images/rocky-refuges-960.webp 960w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)">
+              <img class="adaptation-card__image"
+                src="images/rocky-refuges-640.jpg"
+                srcset="images/rocky-refuges-320.jpg 320w, images/rocky-refuges-640.jpg 640w, images/rocky-refuges-960.jpg 960w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)"
+                width="960" height="621"
+                alt="Rocky outcrop with boulders and desert plants in warm evening light." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="adaptation-card__overview">
+            <span class="category-tag">Habitat</span>
+            <h2>Rocky Refuges</h2>
+            <p>Cracks and crevices turn exposed rock into shelter.</p>
+            <p class="adaptation-card__teaser" aria-hidden="true">Small openings offer important protection.</p>
+          </div>
+          <button class="adaptation-card__toggle" type="button"
+            aria-label="Show details for Rocky Refuges" aria-controls="rocky-refuges-details"
+            aria-expanded="false"></button>
+          <div class="adaptation-card__details" id="rocky-refuges-details" role="region"
+            aria-label="Rocky Refuges details" aria-hidden="true" tabindex="-1" inert>
+            <span class="category-tag">Habitat</span>
+            <h2>Rocky Refuges</h2>
+            <p>Rocky slopes may seem bare, but spaces between boulders can create protected places to hide or rest. Crevices provide shade and shelter, and their narrow openings can help keep larger predators away.</p>
+            <p>Ringtails are skilled climbers that use rocky ledges and crevices. Pallid bats can roost in rock cracks, while scorpions and other small animals shelter beneath stones. Each species uses the terrain differently, but the same rocky habitat can support many kinds of nocturnal life.</p>
+          </div>
+          <span class="adaptation-card__indicator" aria-hidden="true">+</span>
+        </article>
+
+        <!-- Hidden in Plain Sight -->
+        <article class="adaptation-card" data-title="Hidden in Plain Sight" id="hidden-in-plain-sight">
+          <div class="adaptation-card__media">
+            <picture>
+              <source type="image/webp"
+                srcset="images/hidden-in-plain-sight-320.webp 320w, images/hidden-in-plain-sight-640.webp 640w, images/hidden-in-plain-sight-960.webp 960w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)">
+              <img class="adaptation-card__image"
+                src="images/hidden-in-plain-sight-640.jpg"
+                srcset="images/hidden-in-plain-sight-320.jpg 320w, images/hidden-in-plain-sight-640.jpg 640w, images/hidden-in-plain-sight-960.jpg 960w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)"
+                width="960" height="640"
+                alt="Camouflaged lizard blending into the textured bark of a tree." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="adaptation-card__overview">
+            <span class="category-tag">Physical Trait</span>
+            <h2>Hidden in Plain Sight</h2>
+            <p>Patterns and colors help animals blend into the desert.</p>
+            <p class="adaptation-card__teaser" aria-hidden="true">The landscape itself shows why camouflage matters.</p>
+          </div>
+          <button class="adaptation-card__toggle" type="button"
+            aria-label="Show details for Hidden in Plain Sight" aria-controls="hidden-in-plain-sight-details"
+            aria-expanded="false"></button>
+          <div class="adaptation-card__details" id="hidden-in-plain-sight-details" role="region"
+            aria-label="Hidden in Plain Sight details" aria-hidden="true" tabindex="-1" inert>
+            <span class="category-tag">Physical Trait</span>
+            <h2>Hidden in Plain Sight</h2>
+            <p>Camouflage is not just about being the same color as the ground. Spots, stripes, and irregular patterns can break up an animal's outline, making it harder to recognize against rock, bark, sand, or vegetation.</p>
+            <p>The common poorwill has mottled feathers that closely resemble the ground where it rests. The western banded gecko's markings can also make its outline less obvious against desert surfaces. These traits help animals remain less noticeable while resting or moving through their habitats.</p>
+          </div>
+          <span class="adaptation-card__indicator" aria-hidden="true">+</span>
+        </article>
+
+        <!-- Pollination After Dark -->
+        <article class="adaptation-card" data-title="Pollination After Dark" id="night-pollination">
+          <div class="adaptation-card__media">
+            <picture>
+              <source type="image/webp"
+                srcset="images/night-pollination-320.webp 320w, images/night-pollination-640.webp 640w, images/night-pollination-960.webp 960w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)">
+              <img class="adaptation-card__image"
+                src="images/night-pollination-640.jpg"
+                srcset="images/night-pollination-320.jpg 320w, images/night-pollination-640.jpg 640w, images/night-pollination-960.jpg 960w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)"
+                width="960" height="640"
+                alt="Flower releasing a visible cloud of pollen into the air." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="adaptation-card__overview">
+            <span class="category-tag">Survival Strategy</span>
+            <h2>Pollination After Dark</h2>
+            <p>Some flowers depend on visitors that arrive after sunset.</p>
+            <p class="adaptation-card__teaser" aria-hidden="true">Nighttime feeding can help plants reproduce.</p>
+          </div>
+          <button class="adaptation-card__toggle" type="button"
+            aria-label="Show details for Pollination After Dark" aria-controls="night-pollination-details"
+            aria-expanded="false"></button>
+          <div class="adaptation-card__details" id="night-pollination-details" role="region"
+            aria-label="Pollination After Dark details" aria-hidden="true" tabindex="-1" inert>
+            <span class="category-tag">Survival Strategy</span>
+            <h2>Pollination After Dark</h2>
+            <p>Many desert plants have relationships with animals that visit their flowers. Lesser long-nosed bats feed on nectar from flowers such as those of the saguaro, and pollen can travel with them from one blossom to another.</p>
+            <p>Yucca moths have an even more specialized relationship with their host plants: females deliberately gather and transfer pollen between yucca flowers. These interactions connect the survival of nocturnal wildlife with the reproduction of desert plants.</p>
+          </div>
+          <span class="adaptation-card__indicator" aria-hidden="true">+</span>
+        </article>
+
+        <!-- Listening in the Dark -->
+        <article class="adaptation-card adaptation-card--echolocation" data-title="Listening in the Dark" id="listening-in-the-dark">
+          <div class="adaptation-card__media">
+            <picture>
+              <source type="image/webp"
+                srcset="images/echolocation-320.webp 320w, images/echolocation-550.webp 550w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)">
+              <img class="adaptation-card__image"
+                src="images/echolocation-550.jpg"
+                srcset="images/echolocation-320.jpg 320w, images/echolocation-550.jpg 550w"
+                sizes="(min-width: 64rem) 34rem, (min-width: 44rem) calc((100vw - 3rem) / 2), calc(100vw - 2rem)"
+                width="550" height="299"
+                alt="Photograph of a bat and moth with illustrated outgoing sonar waves and returning echoes." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="adaptation-card__overview">
+            <span class="category-tag">Physical Trait</span>
+            <h2>Listening in the Dark</h2>
+            <p>Sound helps bats explore a world with little light.</p>
+            <p class="adaptation-card__teaser" aria-hidden="true">An echo can reveal what eyes may miss.</p>
+          </div>
+          <button class="adaptation-card__toggle" type="button"
+            aria-label="Show details for Listening in the Dark" aria-controls="listening-in-the-dark-details"
+            aria-expanded="false"></button>
+          <div class="adaptation-card__details" id="listening-in-the-dark-details" role="region"
+            aria-label="Listening in the Dark details" aria-hidden="true" tabindex="-1" inert>
+            <span class="category-tag">Physical Trait</span>
+            <h2>Listening in the Dark</h2>
+            <p>Many bats produce high-frequency calls and listen for echoes as the sounds bounce off nearby objects. Echolocation helps them judge distance and navigate through darkness, and some species use it to detect flying insects.</p>
+            <p>Not all nighttime hunting relies on echoes alone. Pallid bats often locate ground-dwelling prey by listening for the sounds it makes, while using echolocation to orient themselves. Together, these abilities show how important hearing can be after sunset.</p>
+          </div>
+          <span class="adaptation-card__indicator" aria-hidden="true">+</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="u-mb-0">Desert After Dark — GIT 414 Capstone</p>
+      <details class="photo-credits">
+        <summary>Photo credits and licenses</summary>
+        <ul>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Saguaro_Sunset.jpg">Shelter Among Saguaros</a> — Saguaro Pictures, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:C0136-bird-burrrows.jpg">Underground Escape</a> — Vmenkov, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Serrotebranco.JPG">Rocky Refuges</a> — Dantasevinte, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:2005-Draco-dussumieri.jpg">Hidden in Plain Sight</a> — Adapted from a photograph by Yathin S Krishnappa, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Reoriented and digitally edited.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Pollen_from_Dactylis_glomerata.jpg">Pollination After Dark</a> — Alex Jones, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.</li>
+          <li><a href="https://askabiologist.asu.edu/echolocation">Listening in the Dark</a> — © Arizona Board of Regents / ASU Ask A Biologist, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+        </ul>
+      </details>
+    </div>
+  </footer>
+</body>
+</html>
