@@ -1,0 +1,129 @@
+/* Nocturnal Natives — same design tokens and breakpoints as Home. */
+@layer overrides {
+  .natives-page .section-heading {
+    margin-block-start: var(--space-large);
+  }
+
+  .natives-page .animal-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  @media (min-width: 44rem) and (max-width: 63.99rem) {
+    .natives-page .animal-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .natives-page .animal-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .natives-page .animal-card,
+  .natives-page .animal-card:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    grid-column: auto;
+    overflow: visible;
+  }
+
+  .natives-page .profile-card__inner {
+    display: grid;
+    flex: 1;
+    min-inline-size: 0;
+    transform-style: preserve-3d;
+    transition: transform 750ms cubic-bezier(.25, 1, .25, 1);
+  }
+
+  .natives-page .profile-card.is-flipped .profile-card__inner {
+    transform: rotateY(180deg);
+  }
+
+  .natives-page .profile-card__face {
+    grid-area: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    min-inline-size: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .natives-page .profile-card__back {
+    padding: var(--space-medium);
+    transform: rotateY(180deg);
+  }
+
+  .natives-page .profile-card__back h3 {
+    font-size: 1rem;
+    color: var(--color-desert-sand);
+    margin-block-start: var(--space-medium);
+  }
+
+  .natives-page .profile-card__back p {
+    margin-block-end: var(--space-small);
+    color: var(--color-muted);
+  }
+
+  .natives-page .animal-card__media,
+  .natives-page .animal-card:nth-child(3) .animal-card__media {
+    aspect-ratio: 16 / 10;
+    min-block-size: 0;
+  }
+
+  .natives-page .animal-card__media::before {
+    content: none;
+  }
+
+  .natives-page .animal-card__body {
+    flex: 1;
+  }
+
+  .natives-page .profile-card__action {
+    display: inline-block;
+    margin-block-start: auto;
+    align-self: flex-start;
+    padding: var(--space-small) 0 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-prickly-pear);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /* The button activates its entire card face. */
+  .natives-page .profile-card__action::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+
+  /* Hover stays pink; selected stays pink until another card is flipped. */
+  .natives-page .profile-card:hover,
+  .natives-page .profile-card:focus-within,
+  .natives-page .profile-card.is-flipped {
+    border-color: var(--color-prickly-pear);
+  }
+
+  .natives-page .profile-card:focus-within {
+    outline: 3px solid var(--color-prickly-pear);
+    outline-offset: 3px;
+  }
+
+  .natives-page .profile-card__action:focus-visible {
+    outline-color: var(--color-prickly-pear);
+  }
+
+  /* Compact mobile cards: one column, image alongside text. */
+  @media (max-width: 43.99rem) {
+    .natives-page .profile-card__front {
+      display: grid;
+      grid-template-columns: 36% minmax(0, 1fr);
+    }
+  }
+}
