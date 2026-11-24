@@ -125,4 +125,261 @@
     pointer-events: none;
     transition: opacity 350ms ease;
   }
+  
+  @media (hover: hover) {
+    .adaptations-page .adaptation-card:not(.is-open):hover::after {
+      opacity: .45;
+    }
+  }
+
+  .adaptations-page .adaptation-card:has(.adaptation-card__toggle:focus-visible):not(.is-open)::after {
+    opacity: .45;
+  }
+
+  .adaptations-page .adaptation-card.is-open::after {
+    opacity: 1;
+  }
+
+  /* Title, intro, and hover teaser on the closed card. */
+  .adaptations-page .adaptation-card__overview {
+    position: absolute;
+    z-index: 2;
+    inset-inline: var(--space-large);
+    inset-block-end: var(--space-large);
+    pointer-events: none;
+    opacity: 1;
+    visibility: visible;
+    transition:
+      opacity 250ms ease,
+      transform 450ms cubic-bezier(.25, 1, .25, 1),
+      visibility 250ms;
+  }
+
+  .adaptations-page .adaptation-card__overview h2 {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+  }
+
+  .adaptations-page .adaptation-card__overview p {
+    margin-block-end: 0;
+    color: var(--color-text);
+  }
+
+  .adaptations-page .adaptation-card__teaser {
+    max-block-size: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(.5rem);
+    transition:
+      max-block-size 450ms ease,
+      opacity 300ms ease,
+      transform 450ms ease;
+  }
+
+  .adaptations-page .adaptation-card__teaser::after {
+    content: " Read more…";
+    color: var(--color-prickly-pear);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  @media (hover: hover) {
+    .adaptations-page .adaptation-card:not(.is-open):hover .adaptation-card__overview {
+      transform: translateY(-.25rem);
+    }
+
+    .adaptations-page .adaptation-card:not(.is-open):hover .adaptation-card__teaser {
+      max-block-size: 4rem;
+      opacity: 1;
+      transform: none;
+      padding-block-start: var(--space-small);
+    }
+  }
+
+  .adaptations-page .adaptation-card:has(.adaptation-card__toggle:focus-visible):not(.is-open) .adaptation-card__overview {
+    transform: translateY(-.25rem);
+  }
+
+  .adaptations-page .adaptation-card:has(.adaptation-card__toggle:focus-visible):not(.is-open) .adaptation-card__teaser {
+    max-block-size: 4rem;
+    opacity: 1;
+    transform: none;
+    padding-block-start: var(--space-small);
+  }
+
+  .adaptations-page .adaptation-card.is-open .adaptation-card__overview {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1rem);
+  }
+
+  /* The closed button fills the card. When open it becomes the
+     top-right close control, leaving the explanation scrollable. */
+  .adaptations-page .adaptation-card__toggle {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius-card);
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .adaptations-page .adaptation-card__toggle:focus-visible {
+    outline: none;
+  }
+
+  .adaptations-page .adaptation-card.is-open .adaptation-card__toggle {
+    inset-block: var(--space-small) auto;
+    inset-inline: auto var(--space-small);
+    inline-size: 3rem;
+    block-size: 3rem;
+  }
+
+  .adaptations-page .adaptation-card__indicator {
+    position: absolute;
+    inset-block-start: var(--space-medium);
+    inset-inline-end: var(--space-medium);
+    z-index: 5;
+    color: var(--color-prickly-pear);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease;
+  }
+
+  @media (hover: hover) {
+    .adaptations-page .adaptation-card:hover .adaptation-card__indicator {
+      opacity: 1;
+    }
+  }
+
+  .adaptations-page .adaptation-card.is-open .adaptation-card__indicator,
+  .adaptations-page .adaptation-card:has(.adaptation-card__toggle:focus-visible) .adaptation-card__indicator {
+    opacity: 1;
+  }
+
+  @media (hover: none) {
+    .adaptations-page .adaptation-card__indicator {
+      opacity: 1;
+    }
+  }
+
+  /* Expanded details scroll inside the fixed card. */
+  .adaptations-page .adaptation-card__details {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: block;
+    padding: var(--space-large);
+    padding-inline-end: calc(var(--space-large) + var(--space-small));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    color: var(--color-text);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(1rem);
+    pointer-events: none;
+    scrollbar-color: var(--color-prickly-pear) transparent;
+    transition:
+      opacity 350ms ease,
+      transform 450ms cubic-bezier(.25, 1, .25, 1),
+      visibility 350ms;
+  }
+
+  .adaptations-page .adaptation-card.is-open .adaptation-card__details {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .adaptations-page .adaptation-card__details h2 {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    padding-inline-end: 2rem;
+    color: var(--color-text);
+  }
+
+  .adaptations-page .adaptation-card__details p {
+    margin-block-end: var(--space-medium);
+    color: var(--color-text);
+  }
+
+  .adaptations-page .adaptation-card__details p:last-child {
+    margin-block-end: 0;
+  }
+
+  .adaptations-page .adaptation-card__details:focus-visible {
+    outline: 3px solid var(--color-prickly-pear);
+    outline-offset: -4px;
+  }
+
+  /* Preserve the complete ASU echolocation graphic. */
+  .adaptations-page .adaptation-card--echolocation .adaptation-card__image {
+    object-fit: contain;
+    background: var(--color-deep-night);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .adaptations-page .adaptation-card,
+    .adaptations-page .adaptation-card__image,
+    .adaptations-page .adaptation-card__overview,
+    .adaptations-page .adaptation-card__teaser,
+    .adaptations-page .adaptation-card__indicator,
+    .adaptations-page .adaptation-card__details,
+    .adaptations-page .adaptation-card::after {
+      transition: none;
+    }
+  }
 }
+
+@layer print {
+  @media print {
+    .adaptations-page .adaptation-grid {
+      display: block;
+    }
+
+    .adaptations-page .adaptation-card {
+      aspect-ratio: auto;
+      min-block-size: 0;
+      margin-block-end: var(--space-medium);
+      padding: var(--space-medium);
+      background: white;
+      color: black;
+      break-inside: avoid;
+    }
+
+    .adaptations-page .adaptation-card__media,
+    .adaptations-page .adaptation-card::before,
+    .adaptations-page .adaptation-card::after,
+    .adaptations-page .adaptation-card__overview,
+    .adaptations-page .adaptation-card__toggle,
+    .adaptations-page .adaptation-card__indicator {
+      display: none;
+    }
+
+    .adaptations-page .adaptation-card__details,
+    .adaptations-page .adaptation-card.is-open .adaptation-card__details {
+      position: static;
+      visibility: visible;
+      opacity: 1;
+      transform: none;
+      overflow: visible;
+      padding: 0;
+      color: black;
+    }
+
+    .adaptations-page .adaptation-card__details h2,
+    .adaptations-page .adaptation-card__details p,
+    .adaptations-page .adaptation-card__details .category-tag {
+      color: black;
+    }
+  }
+}
+
